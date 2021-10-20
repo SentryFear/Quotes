@@ -1,0 +1,29 @@
+.body {
+	background-color: #202020;
+	border-radius: 50px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 160px auto;
+	.menu {
+		padding: 20px 3px 20px 20px;
+
+		.link {
+			color: #a5a5a5;
+			display: block;
+			text-decoration: none;
+		}
+		.active {
+			color: #e5f2fe;
+		}
+	}
+	.content {
+		background-color: #ffffff;
+		border-radius: 45px;
+		margin: 17px;
+		padding: 17px 50px;
+		.scroll {
+			overflow: scroll;
+			height: 80vh;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.quotes {
+	height: 100%;
+	.table {
+		width: 100%;
+		thead {
+			font-weight: bold;
+			tr {
+				td {
+					position: sticky;
+					top: 0;
+					background-color: white;
+				}
+			}
+		}
+		.green {
+			//background-color: #99ffcb;
+			animation: greenAnim ease 1s 1;
+		}
+		.red {
+			//background-color: #ffc5c5;
+			animation: redAnim ease 1s 1;
+		}
+	}
+	.loading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	.error {
+		background-color: #ff2929;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+		color: white;
+		text-align: center;
+	}
+}
+
+@keyframes redAnim {
+	0% {
+		background-color: #ffc5c5;
+	}
+	100% {
+		background-color: transparent;
+	}
+}
+
+@keyframes greenAnim {
+	0% {
+		background-color: #99ffcb;
+	}
+	100% {
+		background-color: transparent;
+	}
+}
